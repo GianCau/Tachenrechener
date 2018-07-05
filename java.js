@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+  var x = 0;
+  $("#btn-light").click(function() {
+    if(x==0){
+
+      $("#display").css("background-color", "rgba(116, 164, 65, 0.71)");
+      x=1;
+    } else {
+      $("#display").css("background-color","#4E6139");
+      x=0;
+    }
+  });
+
+  // END light section
 
   $('.button').on('click', function(e) {
     let btn = e.target.innerHTML;

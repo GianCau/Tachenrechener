@@ -64,6 +64,11 @@ body {
           margin-left: 5px; }
         body .container #container-logo-display #container-lg-mod #model {
           color: #FE9D15; }
+      body .container #container-logo-display #light {
+        position: absolute;
+        right: 50px;
+        top: 130px;
+        color: white; }
       body .container #container-logo-display #btn-light {
         height: 30px;
         width: 30px;
