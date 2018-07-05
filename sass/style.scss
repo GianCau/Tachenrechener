@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+// END google fonts
+
+
+$color-container: #535355;
+$color-model: #FE9D15;
+$color-container-logo: #949497;
+$color-background-logo: #565857;
+// diclared variables
+body{
+  font-family: 'Oswald', cursive;
+  background: #cfcaaf;
+   // container section
+  .container{
+    height: auto;
+    width:auto;
+    background: $color-container;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 5px 0 10px -5px #635e61, inset -5px 0 10px -5px #635e61, inset 0px -5px 10px -2px #635e61, 0 0 1px 2px #635e61, 0 10px 20px 0 #494547;
+    border-bottom: 8px solid #2F2F2F;
+
+    //END  container section
+    //container-logo-display
+    #container-logo-display{
+      background: $color-container-logo;
+      position: absolute;
+
+      width: 100%;
+      height: 180px;
+      -webkit-box-shadow: inset 0px -18px 27px -21px rgba(0,0,0,0.75);
+      -moz-box-shadow: inset 0px -18px 27px -21px rgba(0,0,0,0.75);
+      box-shadow: inset 0px -18px 27px -21px rgba(0,0,0,0.75);
+
+
+      // extern display section
+      #ext-display{
+        height: 90px;
+        width: 365px;
+        background: #242C3A;
+        margin: 15px auto 0;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+
+        //display section
+        #display{
+          height: 70px;
+          width: 345px;
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 10px;
+          box-shadow: inset 0 4px 5px;
+          z-index: 5;
+          background: #677a52;
+          .dis{
+            color: white;
+            font-size: 50px;
+            right: 10px;
+            position: absolute;
+
+          }
+
+          .off{
+           background: #677a52;
+          opacity: 0.7;
+          }
+
+
+
+        }
+
+
+
+
+        //END display section
+      }
+
+      // END extern display section
+      #container-lg-mod{
+       background: #949497;
+        width: 90px;
+        height: 30px;
+        border-radius: 2px;
+        margin-left: 11.5px;
+        margin-top: 10px;
+        border: 2px solid white;
+
+
+
+        // logo section
+        #logo{
+          color: white;
+          font-size: 20px;
+          margin-top: 10px;
+          margin-left: 5px;
+
+
+        }
+        // END logo section
+        //model section
+        #model{
+          color: $color-model;
+
+        }
+        //END model section
+      }
+
+
+
+      // btn-ligth-section
+      #btn-light{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #FE9D15;
+        border-bottom: 5px solid #4d4d4d;
+        position: absolute;
+        right: 11.5px;
+        top: 125px;
+        box-shadow: inset 0 1px 4px #cc7700, inset 0 -4px 20px #cc7700;
+
+        &:hover{
+          border-bottom: 3px solid #4d4d4d;
+          margin-top: 2px;
+        }
+
+        &:active{
+          border-bottom: 1px solid #4d4d4d;
+          margin-top: 3px;
+        }
+
+      }
+
+      // END btn-ligth-section
+    }
+
+    //END container-logo-display
+
+
+
+
+
+
+    // buttons section
+    #container-buttons{
+      margin-top: 200px;
+
+
+
+
+      .row{
+        display: flex;
+        margin: 20px ;
+        //buttons section
+        .button{
+          height: 76px;
+          width: 76px;
+          border-radius: 50%;
+          margin: 0 5px;
+          background: grey;
+          color: white;
+          //border: 3px solid #2F2F2F;
+          font-size: 40px;
+          position: relative;
+          border-bottom: 5px solid #333333;
+          box-shadow: inset 0 1px 4px #4d4d4d, inset 0 -4px 20px #4d4d4d;
+          text-align: center;
+
+          &:hover{
+            border-bottom: 3px solid #333333;
+            margin-top: 2px;
+          }
+
+          &:active{
+            border-bottom: 1px solid #4d4d4d;
+            margin-top: 3px;
+          }
+
+
+          .center-btn-let{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+
+          }
+
+
+
+
+
+        }
+
+
+        #btn-0{
+          width: 160px;
+          height: 70px;
+          border-radius: 20px;
+
+        }
+
+        #c , #ac{
+          color: white;
+          background-color: #FF9D14;
+          box-shadow: inset 0 1px 4px #cc7700, inset 0 -4px 20px #cc7700;
+
+
+        }
+
+        &:hover{
+          cursor: pointer;
+        }
+        // END buttons section
+      }
+
+    }
+
+  }
+
+
+}
+// END body section
